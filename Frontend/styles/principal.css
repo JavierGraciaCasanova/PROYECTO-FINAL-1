@@ -590,3 +590,9 @@ thead {
 .logo-img:hover {
   transform: scale(1.05);
 }
+.main-subheading {
+  font-size: 1.2rem;
+  color: #f7f7f7;
+  text-shadow: 0 0 2px #000;
+  margin-top: 1rem;
+}
