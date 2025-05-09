@@ -41,3 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("🔧 Página FoodTruck cargada correctamente.");
   });
     
+  document.addEventListener("DOMContentLoaded", () => {
+    console.log("🚚 Página FoodTruck cargada correctamente");
+  });
+  
