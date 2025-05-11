@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gula | Carta</title>
+  <title>Gula | Hamburguesas</title>
   <link rel="stylesheet" href="../styles/principal.css" />
-  <link rel="stylesheet" href="../styles/menu.css" />
-  <script defer src="../scripts/menu.js"></script>
+  <link rel="stylesheet" href="../styles/hamburguesas.css" />
+  <script defer src="../scripts/hamburguesas.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
 <body>
 
-  <!-- ✅ HEADER NAVEGACIÓN -->
+  <!-- ✅ HEADER -->
   <header>
     <div class="logo">
       <a href="index.html">
@@ -20,7 +20,7 @@
     </div>
     <nav class="nav-links">
       <a href="index.html">Home</a>
-      <a href="menu.html" class="active">Burgers</a>
+      <a href="menu.html" class="active">Carta</a>
       <a href="foodtruck.html">FoodTruck</a>
       <a href="nosotros.html">¿Quiénes somos?</a>
       <a href="restaurantes.html">Restaurantes</a>
@@ -35,26 +35,18 @@
   <!-- ✅ CONTENIDO -->
   <main class="contenido">
 
-    <h1 class="titulo-carta">📜 Nuestra Carta</h1>
+    <h1 class="titulo-carta">🍔 Nuestras Hamburguesas</h1>
 
-    <section class="categorias-grid">
-      <div class="categoria-card" onclick="irACategoria('hamburguesas.html')">
-        <img src="../Imagenes/categoria-hamburguesa.webp" alt="Hamburguesas" />
-        <h3>Hamburguesas</h3>
-      </div>
-      <div class="categoria-card" onclick="irACategoria('postres.html')">
-        <img src="../Imagenes/categoria-postres.webp" alt="Postres" />
-        <h3>Postres</h3>
-      </div>
-      <div class="categoria-card" onclick="irACategoria('bebidas.html')">
-        <img src="../Imagenes/categoria-bebidas.webp" alt="Bebidas" />
-        <h3>Bebidas</h3>
-      </div>
-      <div class="categoria-card" onclick="irACategoria('acompañantes.html')">
-        <img src="../Imagenes/categoria-acompañantes.webp" alt="Acompañantes" />
-        <h3>Acompañantes</h3>
-      </div>
-    </section>
+    <div id="contenedor-hamburguesas" class="grid-hamburguesas">
+      <!-- Hamburguesas se cargan dinámicamente -->
+    </div>
+
+    <!-- Carrito flotante -->
+    <div id="carrito-desplegable">
+      <ul id="lista-carrito"></ul>
+    </div>
+    <span id="contador-carrito" class="badge" style="display: none;">0</span>
+    <i id="carrito-btn" class="fas fa-shopping-cart"></i>
 
   </main>
 
